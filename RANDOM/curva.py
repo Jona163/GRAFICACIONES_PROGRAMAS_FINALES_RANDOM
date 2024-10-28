@@ -13,3 +13,10 @@ y = np.sin(t)
 plt.figure(figsize=(6, 6))
 plt.plot(x, y, label='Circunferencia Parametrica')
 plt.axis('equal')
+
+#Opciones adicionales para la grafica
+plt.title('Curva Parametrica')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid(True)
+plt.legend()
