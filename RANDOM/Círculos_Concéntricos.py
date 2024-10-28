@@ -28,3 +28,13 @@ plt.plot(x_interior1, y_interior1, label='Círculo interior 1')
 plt.plot(x_interior2, y_interior2, label='Círculo interior 2')
 
 plt.axis('equal')  # Ajusta la relación de aspecto para que la figura sea una circunferencia
+
+# Opciones adicionales de la gráfica
+plt.title('Círculos Concéntricos')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid(True)
+plt.legend()
+
+# Mostrar la gráfica
+plt.show()
