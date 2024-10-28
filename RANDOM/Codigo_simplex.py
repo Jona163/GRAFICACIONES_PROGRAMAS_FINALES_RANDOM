@@ -20,3 +20,13 @@ result = linprog(c, A_ub=A, b_ub=b, bounds=[x_bounds, y_bounds], method='simplex
 x = result.x[0]  # Cantidad de joyas de tipo A
 y = result.x[1]  # Cantidad de joyas de tipo B
 max_beneficio = -result.fun  # Máximo beneficio
+
+# Imprimir resultados
+print("Cantidad de joyas de tipo A:", x)
+print("Cantidad de joyas de tipo B:", y)
+print("Máximo beneficio:", max_beneficio)
+
+# Graficar las restricciones y la solución óptima
+x_vals = np.linspace(0, 500, 100)
+y1_vals = (750 - x_vals) / 1.5
+y2_vals = 750 - 1.5 * x_vals
