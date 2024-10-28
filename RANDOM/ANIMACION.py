@@ -46,3 +46,10 @@ def update_bars(i):
         y_interpolated = y_initial + (y_optimal - y_initial) * t
         bars[0].set_height(x_interpolated)
         bars[1].set_height(y_interpolated)
+
+# Crear los fotogramas de la animación
+frames = np.arange(0, 51)  # 51 fotogramas en total
+ani = animation.FuncAnimation(fig, update_bars, frames=frames, interval=100, blit=False)
+
+# Mostrar la animación
+plt.show()
