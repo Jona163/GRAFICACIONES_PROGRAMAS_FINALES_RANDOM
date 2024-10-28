@@ -21,3 +21,10 @@ y_interior2 = 0.3 * np.sin(t_interior)
 
 # Crear la gráfica
 plt.figure(figsize=(6, 6))  # Ajusta el tamaño de la figura
+
+# Dibujar las curvas paramétricas
+plt.plot(x_exterior, y_exterior, label='Circunferencia exterior')
+plt.plot(x_interior1, y_interior1, label='Círculo interior 1')
+plt.plot(x_interior2, y_interior2, label='Círculo interior 2')
+
+plt.axis('equal')  # Ajusta la relación de aspecto para que la figura sea una circunferencia
