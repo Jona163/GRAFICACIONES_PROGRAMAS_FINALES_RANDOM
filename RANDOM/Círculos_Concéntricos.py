@@ -14,3 +14,10 @@ t_interior = np.linspace(0, 2 * np.pi, 1000)
 # Definir las funciones paramétricas para x(t) y y(t) - círculo interior 1
 x_interior1 = 0.5 * np.cos(t_interior)  # Radio 0.5
 y_interior1 = 0.5 * np.sin(t_interior)
+
+# Definir las funciones paramétricas para x(t) y y(t) - círculo interior 2
+x_interior2 = 0.3 * np.cos(t_interior)  # Radio 0.3
+y_interior2 = 0.3 * np.sin(t_interior)
+
+# Crear la gráfica
+plt.figure(figsize=(6, 6))  # Ajusta el tamaño de la figura
