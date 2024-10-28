@@ -20,3 +20,6 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.grid(True)
 plt.legend()
+
+#Mostrar la grafica
+plt.show()
