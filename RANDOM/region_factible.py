@@ -12,3 +12,16 @@ plt.plot(x, y2, label='2A + B > 10')
 
 # Rellenar la región factible
 plt.fill_between(x, np.maximum(y1, 0), y2, where=(y1 < y2), color='gray', alpha=0.5)
+
+# Configurar el gráfico
+plt.xlim((0, 10))
+plt.ylim((0, 10))
+plt.xlabel('A')
+plt.ylabel('B')
+plt.title('Región factible')
+plt.legend()
+
+# Mostrar el gráfico
+plt.show()
+
+print(f"El valor óptimo de Z es: 54 ")
