@@ -32,3 +32,17 @@ bar_values = [x_initial, y_initial]
 bars = ax.bar(bar_labels, bar_values)
 ax.set_ylabel('Cantidad')
 ax.set_title('Cantidad de joyas de cada tipo')
+
+# Función de actualización de la animación
+def update_bars(i):
+    # Actualizar los valores de las barras con los valores óptimos en el último fotograma
+    if i == len(frames) - 1:
+        bars[0].set_height(x_optimal)
+        bars[1].set_height(y_optimal)
+    else:
+        # Interpolación lineal entre los valores iniciales y óptimos en los fotogramas intermedios
+        t = i / (len(frames) - 1)  # Tiempo normalizado entre 0 y 1
+        x_interpolated = x_initial + (x_optimal - x_initial) * t
+        y_interpolated = y_initial + (y_optimal - y_initial) * t
+        bars[0].set_height(x_interpolated)
+        bars[1].set_height(y_interpolated)
