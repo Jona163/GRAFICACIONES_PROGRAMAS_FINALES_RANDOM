@@ -30,3 +30,14 @@ print("Máximo beneficio:", max_beneficio)
 x_vals = np.linspace(0, 500, 100)
 y1_vals = (750 - x_vals) / 1.5
 y2_vals = 750 - 1.5 * x_vals
+
+plt.plot(x_vals, y1_vals, label='1x + 1.5y <= 750')
+plt.plot(x_vals, y2_vals, label='1.5x + y <= 750')
+plt.plot(x, y, 'ro', label='Solución óptima')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.xlim((0, 500))
+plt.ylim((0, 500))
+plt.legend()
+plt.grid(True)
+plt.show()
