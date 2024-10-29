@@ -6,3 +6,6 @@ from matplotlib import pyplot
 a=float(input("ingrese el valor de (a):\n"))
 b=float(input("ingrese el valor de (b):\n"))
 c=float(input("ingrese el valor de (c):\n"))
+
+disc=(b**2)-(4*a*c)
+raiz=(disc)**(0.5)
