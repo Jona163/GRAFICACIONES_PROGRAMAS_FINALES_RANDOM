@@ -19,3 +19,7 @@ if(disc>0):
 elif(disc==0):
     x1=((-b)+raiz)/(2*a)
     x2=((-b)-raiz)/(2*a)
+    print("x1= ",x1)
+    print("x2= ",x2)
+else:
+    print("Solucion imaginaria")
