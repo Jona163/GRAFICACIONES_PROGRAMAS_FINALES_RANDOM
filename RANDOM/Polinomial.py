@@ -45,3 +45,9 @@ X_test_poli = poli_reg.fit_transform(X_test_p)
 pr = linear_model.LinearRegression()
 #Entreno el modelo
 pr.fit(X_train_poli, y_train_p)
+#Realizo una predicción
+Y_pred_pr = pr.predict(X_test_poli)
+#Graficamos los datos junto con el modelo
+plt.scatter(X_test_p, y_test_p)
+plt.plot(X_test_p, Y_pred_pr, color='red', linewidth=3)
+plt.show()
