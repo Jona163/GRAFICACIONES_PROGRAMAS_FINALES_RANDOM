@@ -41,3 +41,7 @@ poli_reg = PolynomialFeatures(degree = 2)
 #Se transforma las características existentes en características de mayor grado
 X_train_poli = poli_reg.fit_transform(X_train_p)
 X_test_poli = poli_reg.fit_transform(X_test_p)
+#Defino el algoritmo a utilizar
+pr = linear_model.LinearRegression()
+#Entreno el modelo
+pr.fit(X_train_poli, y_train_p)
