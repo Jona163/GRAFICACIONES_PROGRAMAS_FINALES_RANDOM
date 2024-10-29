@@ -13,3 +13,6 @@ print()
 print('Información en el dataset:')
 print(boston.keys())
 print()
+#Verifico las características del dataset
+print('Características del dataset:')
+print(boston.DESCR)
