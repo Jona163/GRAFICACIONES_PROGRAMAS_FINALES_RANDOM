@@ -15,3 +15,7 @@ pyplot.plot(x, [f(i) for i in x])
 #Establecemos el color de los ejes.
 pyplot.axhline(0, color="black")
 pyplot.axvline(0, color="black")
+
+#Especificamos los limites de los ejes.
+pyplot.xlim(0, 3)
+pyplot.ylim(16, 81)
