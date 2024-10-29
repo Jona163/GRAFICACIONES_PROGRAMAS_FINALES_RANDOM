@@ -11,3 +11,7 @@ x = range(-10, 10)
 #El primer argumento es la variable con los valores de x.
 #El segundo argumento le pasamos todos estos valares a la función con ayuda de un bucle.
 pyplot.plot(x, [f(i) for i in x])
+
+#Establecemos el color de los ejes.
+pyplot.axhline(0, color="black")
+pyplot.axvline(0, color="black")
