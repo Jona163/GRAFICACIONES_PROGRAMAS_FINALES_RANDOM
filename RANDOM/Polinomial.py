@@ -8,3 +8,8 @@ import matplotlib.pyplot as plt
 boston = datasets.load_boston()
 print(boston)
 print()
+########## ENTENDIMIENTO DE LA DATA ##########
+#Verifico la información contenida en el dataset
+print('Información en el dataset:')
+print(boston.keys())
+print()
