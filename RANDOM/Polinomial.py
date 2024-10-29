@@ -28,3 +28,8 @@ print(boston.feature_names)
 X_p = boston.data[:, np.newaxis, 5]
 #Defino los datos correspondientes a las etiquetas
 y_p = boston.target
+#Graficamos los datos correspondientes
+plt.scatter(X_p, y_p)
+plt.show()
+########## IMPLEMENTACIÓN DE REGRESIÓN POLINOMIAL ##########
+from sklearn.model_selection import train_test_split
