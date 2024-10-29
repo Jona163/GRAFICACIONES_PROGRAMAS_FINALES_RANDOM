@@ -20,3 +20,6 @@ print(boston.DESCR)
 print('Cantidad de datos:')
 print(boston.data.shape)
 print()
+#Verifico la información de las columnas
+print('Nombres columnas:')
+print(boston.feature_names)
