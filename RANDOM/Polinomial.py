@@ -33,3 +33,6 @@ plt.scatter(X_p, y_p)
 plt.show()
 ########## IMPLEMENTACIÓN DE REGRESIÓN POLINOMIAL ##########
 from sklearn.model_selection import train_test_split
+#Separo los datos de "train" en entrenamiento y prueba para probar los algoritmos
+X_train_p, X_test_p, y_train_p, y_test_p = train_test_split(X_p, y_p, test_size=0.2)
+from sklearn.preprocessing import PolynomialFeatures
