@@ -23,3 +23,8 @@ print()
 #Verifico la información de las columnas
 print('Nombres columnas:')
 print(boston.feature_names)
+########## PREPARAR LA DATA REGRESIÓN POLINOMIAL ##########
+#Seleccionamos solamente la columna 6 del dataset
+X_p = boston.data[:, np.newaxis, 5]
+#Defino los datos correspondientes a las etiquetas
+y_p = boston.target
