@@ -19,3 +19,9 @@ pyplot.axvline(0, color="black")
 #Especificamos los limites de los ejes.
 pyplot.xlim(0, 3)
 pyplot.ylim(16, 81)
+
+#Guardamos el grafico en una imagen "png".
+pyplot.savefig("función_lineal.png")
+
+# Mostramos el gráfico.
+pyplot.show()
